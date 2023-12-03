@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="css/style4.css">
+   <script src="js/script.js" defer></script>
+   <title>Pet Shop</title>
+   <!--STIL ZA DODAVANJE*-->
+    <style>
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      .container {
+        padding: 16px;
+        background-color: white;
+      }
+      
+      input[type=text], input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+      }
+      
+      input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+      
+      hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+      }
+      
+      .registerbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+      }
+      
+      .registerbtn:hover {
+        opacity: 1;
+      }
+      
+      a {
+        color: dodgerblue;
+      }
+      
+      .signin {
+        background-color: #f1f1f1;
+        text-align: center;
+      }
+      </style>
+      <!--STIL ZA DODAVANJE-->
+</head>
+<body>
+   <header>
+      <h1>Code PetShop</h1>
+  </header>
+  <nav>
+      <a href="index.html">Početna</a>
+      <a href="korpa.html">Korpa</a>
+      <a href="onama.html">O nama</a>
+      <a href="admin.html">AdminKorisnici</a>
+      <a href="adminkorisnic.html">AdminProzivodi</a>
+  </nav>
+  <button class="open-button" onclick="openForm()">Login</button>
+  <div class="form-popup" id="myForm">
+   <form action="/action_page.php" class="form-container">
+     <h1>Login</h1>
+ 
+     <label for="email"><b>Email</b></label><br>
+     <input type="text" placeholder="Enter Email" name="email" required>
+ 
+     <label for="psw"><b>Password</b></label>
+     <input type="password" placeholder="Enter Password" name="psw" required>
+ 
+     <button type="submit" class="btn">Login</button>
+     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+   </form>
+ </div>
+ <script>
+   </script>
+   <table>
+     <caption>2023 proizvodi</caption>
+     <thead>
+       <tr>
+         <th></th>
+         <th>ID Proizvoda</th>
+         <th>Naziv</th>
+         <th>Cena</th>
+         <th>Tip</th>
+         <th>Prosecna Ocena</th>
+       <tr>
+     </thead>
+     <tbody>
+       <tr>
+         <th><button>Izmeni</button></th>
+         <td>-MNQftJa4rskH-dBqF9Z0</td>
+         <td>Bit Premium</td>
+         <td>3200</td>
+         <td>Hrana za pse</td>
+         <td>8.8</td>
+       </tr>
+       <tr>
+        <th><button>Izmeni</button></th>
+        <td>-MNQftJa4rskH-dBqF9Z1</td>
+        <td>Remi Cat</td>
+        <td>1700</td>
+        <td>Hrana za macke</td>
+        <td>6.71</td>
+      </tr>
+      <tr>
+        <th><button>Izmeni</button></th>
+        <td>-MNQftJa4rskH-dBqF9Z2</td>
+        <td>Flamingo loprica za pse</td>
+        <td>700</td>
+        <td>Igracka</td>
+        <td>5.87</td>
+      </tr>
+      <tr>
+        <th><button>Izmeni</button></th>
+        <td>-MNQftJa4rskH-dBqF9Z3</td>
+        <td>Transporter Atlas</td>
+        <td>4500</td>
+        <td>Transporteri</td>
+        <td>7.53</td>
+      </tr>
+      <tr>
+        <th><button>Izmeni</button></th>
+        <td>-MNQftJa4rskH-dBqF9Z4</td>
+        <td>Starsnack Strips</td>
+        <td>120</td>
+        <td>Poslastice</td>
+        <td>4.8</td>
+      </tr>
+      <tr>
+        <th><button>Izmeni</button></th>
+        <td>-MNQftJa4rskH-dBqF9Z5</td>
+        <td>Royale Dog</td>
+        <td>2900</td>
+        <td>Hrana za pse</td>
+        <td>8.8</td>
+      </tr>
+      <tr>
+        <th><button>Izmeni</button></th>
+        <td>-MNQftJa4rskH-dBqF9Z6</td>
+        <td>MONGRE Fresh</td>
+        <td>460</td>
+        <td>Hrana za pse</td>
+        <td>6.0</td>
+      </tr>
+      <tr>
+        <th><button>Izmeni</button></th>
+        <td>-MNQftJa4rskH-dBqF9Z7</td>
+        <td>Biskies</td>
+        <td>230</td>
+        <td>Hrana za macke</td>
+        <td>7.6</td>
+      </tr>
+      <tr>
+        <th><button>Izmeni</button></th>
+        <td>-MNQftJa4rskH-dBqF9Z8</td>
+        <td>Gourmet</td>
+        <td>3719</td>
+        <td>Hrana za macke/macice</td>
+        <td>7.4</td>
+      </tr>
+      <tr>
+        <th><button>Izmeni</button></th>
+        <td>-MNQftJa4rskH-dBqF9Z9</td>
+        <td>PAWISE Mahalice</td>
+        <td>809</td>
+        <td>Igracke</td>
+        <td>7.0</td>
+      </tr>
+      <tr>
+        <th><button>Izmeni</button></th>
+        <td>-MNQftJa4rskH-dBqF1Z0</td>
+        <td>Palisanac</td>
+        <td>1300</td>
+        <td>Igracke</td>
+        <td>8.0</td>
+      </tr>
+      <tr>
+        <th><button>Izmeni</button></th>
+        <td>-MNQftJa4rskH-dBqF1Z1</td>
+        <td>Transporter Nomad</td>
+        <td>6700</td>
+        <td>Transporteri</td>
+        <td>7.53</td>
+      </tr>
+      <tr>
+        <th><button>Izmeni</button></th>
+        <td>-MNQftJa4rskH-dBqF1Z2</td>
+        <td>CURVER Transporter PetLife Rattan</td>
+        <td>8099</td>
+        <td>Transporteri</td>
+        <td>7.5</td>
+      </tr>
+      <tr>
+        <th><button>Izmeni</button></th>
+        <td>-MNQftJa4rskH-dBqF1Z3</td>
+        <td>DantaStix</td>
+        <td>320</td>
+        <td>PoslasticE</td>
+        <td>4.8</td>
+      </tr>
+      <tr>
+        <th><button>Izmeni</button></th>
+        <td>-MNQftJa4rskH-dBqF1Z4</td>
+        <td>Trixie</td>
+        <td>250</td>
+        <td>Poslastice</td>
+        <td>4.8</td>
+      </tr>
+     </tbody>
+   </table>
+   <br>
+   <br>
+   <left>
+   <button class="open-button" onclick="openForm()">Login</button>
+    <form action="/action_page.php" class="form-container">
+      <h1>Brisanje</h1>
+  
+      <label for="email"><b>Unesite ID prozivoda koji zelite da obrisete.</b></label><br>
+      <input type="text" placeholder="Uneti ID" required>
+
+      <button type="submit" class="btn">Potvrdi</button>
+    </form>
+</left>
+
+<CENTER>
+<form action="/action_page.php">
+  <div class="container">
+    <h1>Dodavanje novog proizvoda u sistem</h1>
+    <p></p>
+    <hr>
+
+    <label for="email"><b>ID Proizvoda</b></label>
+    <input type="text" placeholder="Uneti ID Prozivoda" required>
+
+    <label for="email"><b>Naziv</b></label>
+    <input type="text" placeholder="Uneti Naziv" required>
+
+    <label for="email"><b>Cena</b></label>
+    <input type="text" placeholder="Uneti Cenu" required>
+
+    <label for="email"><b>Tip</b></label>
+    <input type="text" placeholder="Uneti Tip" required>
+
+    <label for="email"><b>Prosecna Ocena</b></label>
+    <input type="text" placeholder="Uneti Prosecnu Ocenu" required>
+
+    <hr>
+    <p>Potvrdite unos novog proizvoda u sistem.</p>
+
+    <button type="submit" class="registerbtn">POTVRDITE</button>
+  </div>
+</form>
+</CENTER>
+
+
+</body>
+</html>

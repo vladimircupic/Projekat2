@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="css/style4.css">
+   <script src="js/script.js" defer></script>
+   <title>Pet Shop</title>
+   <!--STIL ZA DODAVANJE*-->
+    <style>
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      .container {
+        padding: 16px;
+        background-color: white;
+      }
+      
+      input[type=text], input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+      }
+      
+      input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+      
+      hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+      }
+      
+      .registerbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+      }
+      
+      .registerbtn:hover {
+        opacity: 1;
+      }
+      
+      a {
+        color: dodgerblue;
+      }
+      
+      .signin {
+        background-color: #f1f1f1;
+        text-align: center;
+      }
+      </style>
+      <!--STIL ZA DODAVANJE-->
+</head>
+<body>
+   <header>
+      <h1>Code PetShop</h1>
+  </header>
+  <nav>
+      <a href="index.html">Početna</a>
+      <a href="korpa.html">Korpa</a>
+      <a href="onama.html">O nama</a>
+      <a href="admin.html">AdminKorisnici</a>
+      <a href="adminkorisnic.html">AdminProzivodi</a>
+  </nav>
+  <button class="open-button" onclick="openForm()">Login</button>
+  <div class="form-popup" id="myForm">
+   <form action="/action_page.php" class="form-container">
+     <h1>Login</h1>
+ 
+     <label for="email"><b>Email</b></label><br>
+     <input type="text" placeholder="Enter Email" name="email" required>
+ 
+     <label for="psw"><b>Password</b></label>
+     <input type="password" placeholder="Enter Password" name="psw" required>
+ 
+     <button type="submit" class="btn">Login</button>
+     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+   </form>
+ </div>
+ <script>
+   </script>
+   <table>
+     <caption>2023 korisnici</caption>
+     <thead>
+       <tr>
+         <th></th>
+         <th>KorisnickoIme</th>
+         <th>Lozinka</th>
+         <th>Ime</th>
+         <th>Prezime</th>
+         <th>Email</th>
+         <th>DatumRodjenja</th>
+         <th>Adresa</th>
+         <th>Telefon</th>
+       <tr>
+     </thead>
+     <tbody>
+       <tr>
+         <th><button>Izmeni</button></th>
+         <td>petar</td>
+         <td>petar123</td>
+         <td>Petar</td>
+         <td>Petrovic</td>
+         <td>ppetrovic@webd.com</td>
+         <td>1994-10-22</td>
+         <td>Gogoljeva 39, Novi Sad,21000</td>
+         <td>061-456-456</td>
+       </tr>
+       <tr>
+        <th><button>Izmeni</button></th>
+        <td>jovana</td>
+        <td>jovana123</td>
+        <td>Jovana</td>
+        <td>Jovanovic</td>
+        <td>jjovanovic@webd.com</td>
+        <td>1982-05-05</td>
+        <td>Jug Bogdana 14, Zrenjanin,350902</td>
+        <td>062-321-4321</td>
+      </tr>
+      <tr>
+        <th><button>Izmeni</button></th>
+        <td>marko</td>
+        <td>marko123</td>
+        <td>Marko</td>
+        <td>Markovic</td>
+        <td>mmarkovic@webd.com</td>
+        <td>1990-09-17</td>
+        <td>Cara Lazara 9a, Beograd,11000</td>
+        <td>063-876-7876</td>
+      </tr>
+      <tr>
+        <th><button>Izmeni</button></th>
+        <td>filip</td>
+        <td>filip123</td>
+        <td>Filip</td>
+        <td>Filipoic</td>
+        <td>ffilipovic@webd.com</td>
+        <td>1973-03-10</td>
+        <td>Solunska 5, Novi Sad, 21000</td>
+        <td>064-1459-159</td>
+      </tr>
+      <tr>
+        <th><button>Izmeni</button></th>
+        <td>tijana</td>
+        <td>tijana123</td>
+        <td>Tijana</td>
+        <td>Tijanovic</td>
+        <td>ttijanovic@webd.com</td>
+        <td>1998-06-29</td>
+        <td>Ružićeva 32, Zrenjanin, 350902</td>
+        <td>065-753-753</td>
+      </tr>
+     </tbody>
+   </table>
+   <br>
+   <br>
+   <left>
+   <button class="open-button" onclick="openForm()">Login</button>
+    <form action="/action_page.php" class="form-container">
+      <h1>Brisanje</h1>
+  
+      <label for="email"><b>Unesite mejl korisnika za brisanje</b></label><br>
+      <input type="text" placeholder="Uneti Email" name="email" required>
+
+      <button type="submit" class="btn">Potvrdi</button>
+    </form>
+</left>
+
+<CENTER>
+<form action="/action_page.php">
+  <div class="container">
+    <h1>Dodavanje novog korisnika u sistem</h1>
+    <p></p>
+    <hr>
+
+    <label for="email"><b>KorisnickoIme</b></label>
+    <input type="text" placeholder="Uneti KorisnickoIme" required>
+
+    <label for="psw"><b>Lozinka</b></label>
+    <input type="password" placeholder="Uneti Lozinku" name="psw" id="psw" required>
+
+    <label for="email"><b>Ime</b></label>
+    <input type="text" placeholder="Uneti Ime" required>
+
+    <label for="email"><b>Prezime</b></label>
+    <input type="text" placeholder="Uneti Prezime" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Uneti Email" name="email" id="email" required>
+
+    <label for="email"><b>DatumRodjenja</b></label>
+    <input type="text" placeholder="Uneti DatumRodjenja" required>
+
+    <label for="email"><b>Adresa</b></label>
+    <input type="text" placeholder="Uneti Adresa" required>
+
+    <label for="email"><b>Telefon</b></label>
+    <input type="text" placeholder="Uneti Telefon" required>
+
+    <hr>
+    <p>Potvrdite unos novog korisnika u sistem.</p>
+
+    <button type="submit" class="registerbtn">POTVRDITE</button>
+  </div>
+</form>
+</CENTER>
+
+
+</body>
+</html>

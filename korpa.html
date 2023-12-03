@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="css/style1.css">
+   <script src="js/script.js" defer></script>
+   <title>Pet Shop</title>
+   <style>
+    table, td {
+      border: 1px solid black;
+      border-radius: 10px;
+      font-size: 20px;
+    }
+    th {
+      border: 1px solid black;
+      border-radius: 10px;
+      font-size: 25px;
+      background-color: darkturquoise;
+      color:green;
+    }
+    </style>
+</head>
+<body>
+   <header>
+      <h1>Code PetShop</h1>
+  </header>
+  <nav>
+      <a href="index.html">Početna</a>
+      <a href="korpa.html">Korpa</a>
+      <a href="onama.html">O nama</a>
+      <a href="Admin.html">AdminKorisnici</a>
+      <a href="adminkorisnic.html">AdminProizvodi</a>
+  </nav>
+  <button class="open-button" onclick="openForm()">Login</button>
+  <div class="form-popup" id="myForm">
+   <form action="/action_page.php" class="form-container">
+     <h1>Login</h1>
+ 
+     <label for="email"><b>Email</b></label><br>
+     <input type="text" placeholder="Enter Email" name="email" required>
+ 
+     <label for="psw"><b>Password</b></label>
+     <input type="password" placeholder="Enter Password" name="psw" required>
+ 
+     <button type="submit" class="btn">Login</button>
+     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+   </form>
+ </div>
+ <script>
+   function openForm() {
+     document.getElementById("myForm").style.display = "block";
+   }
+   
+   function closeForm() {
+     document.getElementById("myForm").style.display = "none";
+   }
+   </script>
+   <center>
+   <font size="3">
+<h1 style="color:red">Lista proizvoda u vasoj korpi</h1>
+</font>
+<br>
+<br>
+<table style="width:50%">
+    <tr style="height:100px">
+      <th>Naziv</th>
+      <th>Cena</th>
+      <th>Tip</th>
+      <th>Ocena</th>
+    </tr>
+    <tr style="height:100px">
+      <td>Remi cat</td>
+      <td>1700 dinara</td>
+      <td>Hrana za macke</td>
+      <td>6.71</td>
+    </tr>
+    <tr style="height:100px">
+        <td>Starstrip snacks</td>
+        <td>1200 dinara</td>
+        <td>Poslastica</td>
+        <td>4.8</td>
+      </tr>
+      <tr style="height:100px">
+        <td>Royale dog</td>
+        <td>2900 dinara</td>
+        <td>Hrana za pse</td>
+        <td>8.8</td>
+      </tr>
+  </table> 
+  </center>
+   </body>
+   </html>

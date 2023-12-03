@@ -11,19 +11,21 @@
 </head>
 <body>
    <header>
-      <h1>Pet shop</h1>
+      <h1>Code PetShop</h1>
   </header>
   <nav>
       <a href="index.html">Početna</a>
-      <a href="autor.html">O autoru</a>
-      <a href="uputstvo.html">Uputstvo</a>
+      <a href="korpa.html">Korpa</a>
+      <a href="onama.html">O nama</a>
+      <a href="admin.html">AdminKorisnici</a>
+      <a href="adminkorisnic.html">AdminProizvodi</a>
   </nav>
   <button class="open-button" onclick="openForm()">Login</button>
   <div class="form-popup" id="myForm">
    <form action="/action_page.php" class="form-container">
      <h1>Login</h1>
  
-     <label for="email"><b>Email</b></label>
+     <label for="email"><b>Email</b></label><br>
      <input type="text" placeholder="Enter Email" name="email" required>
  
      <label for="psw"><b>Password</b></label>
@@ -44,44 +46,44 @@
    </script>
 <div class="container">
 
-   <h3 class="title"> organic products </h3>
+   <h3 class="title"> Proizvodi </h3>
 
    <div class="products-container">
 
       <div class="product" data-name="p-1">
-         <img src="images/1.png" alt="">
-         <h3>strawberries</h3>
-         <div class="price">$2.00</div>
+         <img src="images/Slika1.png" alt="">
+         <h3>Remi cat</h3>
+         <div class="price">1700 dinara</div>
       </div>
 
       <div class="product" data-name="p-2">
-         <img src="images/2.png" alt="">
-         <h3>onions</h3>
-         <div class="price">$2.00</div>
+         <img src="images/Slika2.jpg" alt="">
+         <h3>Flamingo loptica</h3>
+         <div class="price">700 dinara</div>
       </div>
 
       <div class="product" data-name="p-3">
-         <img src="images/3.png" alt="">
-         <h3>tomatoes</h3>
-         <div class="price">$2.00</div>
+         <img src="images/Slika3.png" alt="">
+         <h3>Transporter atlas</h3>
+         <div class="price">4500 dinara</div>
       </div>
 
       <div class="product" data-name="p-4">
-         <img src="images/4.png" alt="">
-         <h3>brinjal</h3>
-         <div class="price">$2.00</div>
+         <img src="images/Slika4.png" alt="">
+         <h3>Starsnack Strips</h3>
+         <div class="price">1200 dinara</div>
       </div>
 
       <div class="product" data-name="p-5">
-         <img src="images/5.png" alt="">
-         <h3>broccoli</h3>
-         <div class="price">$2.00</div>
+         <img src="images/Slika5.png" alt="">
+         <h3>Royale dog</h3>
+         <div class="price">2900 dinara</div>
       </div>
 
       <div class="product" data-name="p-6">
-         <img src="images/6.png" alt="">
-         <h3>potatoes</h3>
-         <div class="price">$2.00</div>
+         <img src="images/Slika6.png" alt="">
+         <h3>Mongre fresh</h3>
+         <div class="price">460 dinara</div>
       </div>
 
    </div>
@@ -92,8 +94,8 @@
 
    <div class="preview" data-target="p-1">
       <i class="fas fa-times"></i>
-      <img src="images/1.png" alt="">
-      <h3>organic strawberries</h3>
+      <img src="images/Slika1.png" alt="">
+      <h3>Remi cat</h3>
       <div class="stars">
          <i class="fas fa-star"></i>
          <i class="fas fa-star"></i>
@@ -102,18 +104,19 @@
          <i class="fas fa-star-half-alt"></i>
          <span>( 250 )</span>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-      <div class="price">$2.00</div>
+      <p>Mačkama kao tipičnim mesojedima je potrebna hrana bogata kvalitetnim belančevinama, prilagođena njihovoj brzoj probavi. Dnevno Vaš kućni tigar može pojesti čak 12-18 manjih obroka!</p>
+      <div class="price">1700 dinara</div>
       <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
+         <a href="#" class="buy">Kupite</a>
+         <a href="korpa.html" class="cart">Korpa</a>
+         <a href="proizvodi/remicat.html" class="buy">O proizvodu</a>
       </div>
    </div>
 
    <div class="preview" data-target="p-2">
       <i class="fas fa-times"></i>
-      <img src="images/2.png" alt="">
-      <h3>organic onions</h3>
+      <img src="images/Slika2.jpg" alt="">
+      <h3>Flamingo loptica za pse</h3>
       <div class="stars">
          <i class="fas fa-star"></i>
          <i class="fas fa-star"></i>
@@ -122,18 +125,19 @@
          <i class="fas fa-star-half-alt"></i>
          <span>( 250 )</span>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-      <div class="price">$2.00</div>
+      <p>FLAMINGO Igračka za pse Lopta sa zvoncem, gumena 5cm, raznih boja</p>
+      <div class="price">700 dinara</div>
       <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
+         <a href="#" class="buy">Kupite</a>
+         <a href="korpa.html" class="cart">Korpa</a>
+         <a href="proizvodi/flamingo.html" class="buy">O proizvodu</a>
       </div>
    </div>
 
    <div class="preview" data-target="p-3">
       <i class="fas fa-times"></i>
-      <img src="images/3.png" alt="">
-      <h3>organic tomatoes</h3>
+      <img src="images/Slika3.png" alt="">
+      <h3>Transporter atlas</h3>
       <div class="stars">
          <i class="fas fa-star"></i>
          <i class="fas fa-star"></i>
@@ -142,17 +146,18 @@
          <i class="fas fa-star-half-alt"></i>
          <span>( 250 )</span>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-      <div class="price">$2.00</div>
+      <p>Transporter za pse se najčešće kupuje za putovanja avionom i za kratke izlete do veterinara. Obratite pažnju na vaše potrebe i izaberite Atlas transporter kao rešenje za vašeg psa ili macku</p>
+      <div class="price">4500 dinara</div>
       <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
+         <a href="#" class="buy">Kupite</a>
+         <a href="korpa.html" class="cart">Korpa</a>
+         <a href="proizvodi/atlas.html" class="buy">O proizvodu</a>
       </div>
    </div>
 
    <div class="preview" data-target="p-4">
       <i class="fas fa-times"></i>
-      <img src="images/4.png" alt="">
+      <img src="images/Slika4.png" alt="">
       <h3>organic brinjal</h3>
       <div class="stars">
          <i class="fas fa-star"></i>
@@ -162,18 +167,19 @@
          <i class="fas fa-star-half-alt"></i>
          <span>( 250 )</span>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-      <div class="price">$2.00</div>
+      <p>Sadrži ukusne grickalice sa ukusom mesa za vašeg psa. Uvek su omiljena poslastica, jer dolaze bez dodatka šećera.Sa ukusom jagnjetine.</p>
+      <div class="price">$1200</div>
       <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
+         <a href="#" class="buy">Kupite</a>
+         <a href="korpa.html" class="cart">Korpa</a>
+         <a href="proizvodi/starsnacks.html" class="buy">O proizvodu</a>
       </div>
    </div>
 
    <div class="preview" data-target="p-5">
       <i class="fas fa-times"></i>
-      <img src="images/5.png" alt="">
-      <h3>organic broccoli</h3>
+      <img src="images/Slika5.png" alt="">
+      <h3>Royale dog</h3>
       <div class="stars">
          <i class="fas fa-star"></i>
          <i class="fas fa-star"></i>
@@ -182,18 +188,19 @@
          <i class="fas fa-star-half-alt"></i>
          <span>( 250 )</span>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-      <div class="price">$2.00</div>
+      <p>Bez konzervansa, veštačkih boja, pojačivača ukusa, pesticida. Bez žitarica i skroba. Meso divljači odlikuje nizak udeo masnoća i holesterola, zato je izuzetno pogodno za pse koji imaju ograničen unos masti.</p>
+      <div class="price">2900 dinara</div>
       <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
+         <a href="#" class="buy">Kupite</a>
+         <a href="korpa.html" class="cart">Korpa</a>
+         <a href="proizvodi/royale.html" class="buy">O proizvodu</a>
       </div>
    </div>
 
    <div class="preview" data-target="p-6">
       <i class="fas fa-times"></i>
-      <img src="images/6.png" alt="">
-      <h3>organic potatoes</h3>
+      <img src="images/Slika6.png" alt="">
+      <h3>Mongre Fresh</h3>
       <div class="stars">
          <i class="fas fa-star"></i>
          <i class="fas fa-star"></i>
@@ -202,11 +209,12 @@
          <i class="fas fa-star-half-alt"></i>
          <span>( 250 )</span>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-      <div class="price">$2.00</div>
+      <p>Ukusna pašteta sa ukusom jagnjetine. Bez boja, konzervanasa i hidrogenizovanih masti. Ukusan recept napravljen u Italiji, bez glutena, idealan je za pse svih rasa.</p>
+      <div class="price">460 dinara</div>
       <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
+         <a href="#" class="buy">Kupite</a>
+         <a href="korpa.html" class="cart">Korpa</a>
+         <a href="proizvodi/mongre.html" class="buy">O proizvodu</a>
       </div>
    </div>
 
