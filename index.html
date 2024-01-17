@@ -4,51 +4,98 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/6.5.1/css/font-awesome.min.css" type="text/css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
    <link rel="stylesheet" href="css/style.css">
+   <scritpt src="https://kit.fontawesome.com/92d702FD8.js" crossorigin="anonymous"></scritpt>
    <script src="js/script.js" defer></script>
    <title>Pet Shop</title>
 </head>
 <body>
    <header>
-      <h1>Code PetShop</h1>
-  </header>
-  <nav>
+      <h1 class="logo">Code PetShop</h1> 
+    <nav class="navigation">
       <a href="index.html">Početna</a>
       <a href="korpa.html">Korpa</a>
       <a href="onama.html">O nama</a>
       <a href="admin.html">AdminKorisnici</a>
       <a href="adminkorisnic.html">AdminProizvodi</a>
-  </nav>
-  <button class="open-button" onclick="openForm()">Login</button>
-  <div class="form-popup" id="myForm">
-   <form action="/action_page.php" class="form-container">
-     <h1>Login</h1>
- 
-     <label for="email"><b>Email</b></label><br>
-     <input type="text" placeholder="Enter Email" name="email" required>
- 
-     <label for="psw"><b>Password</b></label>
-     <input type="password" placeholder="Enter Password" name="psw" required>
- 
-     <button type="submit" class="btn">Login</button>
-     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-   </form>
- </div>
- <script>
-   function openForm() {
-     document.getElementById("myForm").style.display = "block";
-   }
-   
-   function closeForm() {
-     document.getElementById("myForm").style.display = "none";
-   }
-   </script>
+      <button class="btnloginin-popup">Login</button>
+    </nav>
+   </header>
+   <br>
+   <br>
+   <br>
+   <br>
+   <center>
+   <div class="wrapper">
+      <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+      <div class="form-box login">
+         <h2>Login</h2>
+         <form action="#">
+            <div class="input-box">
+               <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+               <input type="email" required>
+               <label>Email</label>
+            </div>
+            <div class="input-box">
+               <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+               <input type="password" required>
+               <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+               <label><input type="checkbox">Zapamti</label>
+               <a href="#">Zaboravili ste lozinku?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="login-register">
+               <p>Nemate nalog?   <a href="#" class="register-link">Registracija</a></p>
+            </div>
+         </form>
+      </div>
+
+
+      <div class="form-box register">
+         <h2>Registration</h2>
+         <form action="#">
+            <div class="input-box">
+               <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+               <input type="email" required>
+               <label>Username</label>
+            </div>
+            <div class="input-box">
+               <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+               <input type="email" required>
+               <label>Email</label>
+            </div>
+            <div class="input-box">
+               <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+               <input type="password" required>
+               <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+               <label><input type="checkbox">Slažem se sa uslovima korišćenja</label>
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <div class="login-register">
+               <p>Imate nalog?   <a href="#" class="login-link">Login</a></p>
+            </div>
+         </form>
+      </div>
+   </div>
+</center>
 <div class="container">
 
    <h3 class="title"> Proizvodi </h3>
 
+
    <div class="products-container">
+
+      <div class="product" data-name="p-0">
+         <img src="images/Slika0.jpg" alt="">
+         <h3>Bit premium</h3>
+         <div class="price">3200 dinara</div>
+      </div>
 
       <div class="product" data-name="p-1">
          <img src="images/Slika1.png" alt="">
@@ -86,11 +133,78 @@
          <div class="price">460 dinara</div>
       </div>
 
+      <div class="product" data-name="p-7">
+         <img src="images/Slika7.jpg" alt="">
+         <h3>Biskies</h3>
+         <div class="price">230 dinara</div>
+      </div>
+
+      <div class="product" data-name="p-8">
+         <img src="images/Slika8.jpg" alt="">
+         <h3>Gourmet</h3>
+         <div class="price">3719 dinara</div>
+      </div>
+
+      <div class="product" data-name="p-9">
+         <img src="images/Slika9.jpg" alt="">
+         <h3>Pawise Mahalice</h3>
+         <div class="price">809 dinara</div>
+      </div>
+
+      <div class="product" data-name="p-10">
+         <img src="images/Slika10.jpg" alt="">
+         <h3>Plišanac</h3>
+         <div class="price">1300 dinara</div>
+      </div>
+
+      <div class="product" data-name="p-11">
+         <img src="images/Slika11.jpg" alt="">
+         <h3>Transporter Nomad</h3>
+         <div class="price">6700 dinara</div>
+      </div>
+
+      <div class="product" data-name="p-12">
+         <img src="images/Slika12.jpg" alt="">
+         <h3>CURVER Transporter PetLife Rattan</h3>
+         <div class="price">8099 dinara</div>
+      </div>
+
+      <div class="product" data-name="p-13">
+         <img src="images/Slika13.jpg" alt="">
+         <h3>DentaStix</h3>
+         <div class="price">320 dinara</div>
+      </div>
+
+      <div class="product" data-name="p-14">
+         <img src="images/Slika14.jpg" alt="">
+         <h3>TRIXI</h3>
+         <div class="price">250 dinara</div>
+      </div>
+
    </div>
 
 </div>
 
 <div class="products-preview">
+
+   <div class="preview" data-target="p-0">
+      <i class="fas fa-times"></i>
+      <img src="images/Slika0.jpg" alt="">
+      <h3>Bit premium</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <div class="price">3200 dinara</div>
+      <div class="buttons">
+         <a href="korpa.html" class="cart">Korpa</a>
+         <a href="proizvodi/bitpremium.html" class="buy">O proizvodu</a>
+      </div>
+   </div>
 
    <div class="preview" data-target="p-1">
       <i class="fas fa-times"></i>
@@ -104,10 +218,8 @@
          <i class="fas fa-star-half-alt"></i>
          <span>( 250 )</span>
       </div>
-      <p>Mačkama kao tipičnim mesojedima je potrebna hrana bogata kvalitetnim belančevinama, prilagođena njihovoj brzoj probavi. Dnevno Vaš kućni tigar može pojesti čak 12-18 manjih obroka!</p>
       <div class="price">1700 dinara</div>
       <div class="buttons">
-         <a href="#" class="buy">Kupite</a>
          <a href="korpa.html" class="cart">Korpa</a>
          <a href="proizvodi/remicat.html" class="buy">O proizvodu</a>
       </div>
@@ -125,10 +237,8 @@
          <i class="fas fa-star-half-alt"></i>
          <span>( 250 )</span>
       </div>
-      <p>FLAMINGO Igračka za pse Lopta sa zvoncem, gumena 5cm, raznih boja</p>
       <div class="price">700 dinara</div>
       <div class="buttons">
-         <a href="#" class="buy">Kupite</a>
          <a href="korpa.html" class="cart">Korpa</a>
          <a href="proizvodi/flamingo.html" class="buy">O proizvodu</a>
       </div>
@@ -146,10 +256,8 @@
          <i class="fas fa-star-half-alt"></i>
          <span>( 250 )</span>
       </div>
-      <p>Transporter za pse se najčešće kupuje za putovanja avionom i za kratke izlete do veterinara. Obratite pažnju na vaše potrebe i izaberite Atlas transporter kao rešenje za vašeg psa ili macku</p>
       <div class="price">4500 dinara</div>
       <div class="buttons">
-         <a href="#" class="buy">Kupite</a>
          <a href="korpa.html" class="cart">Korpa</a>
          <a href="proizvodi/atlas.html" class="buy">O proizvodu</a>
       </div>
@@ -167,10 +275,8 @@
          <i class="fas fa-star-half-alt"></i>
          <span>( 250 )</span>
       </div>
-      <p>Sadrži ukusne grickalice sa ukusom mesa za vašeg psa. Uvek su omiljena poslastica, jer dolaze bez dodatka šećera.Sa ukusom jagnjetine.</p>
       <div class="price">$1200</div>
       <div class="buttons">
-         <a href="#" class="buy">Kupite</a>
          <a href="korpa.html" class="cart">Korpa</a>
          <a href="proizvodi/starsnacks.html" class="buy">O proizvodu</a>
       </div>
@@ -188,10 +294,8 @@
          <i class="fas fa-star-half-alt"></i>
          <span>( 250 )</span>
       </div>
-      <p>Bez konzervansa, veštačkih boja, pojačivača ukusa, pesticida. Bez žitarica i skroba. Meso divljači odlikuje nizak udeo masnoća i holesterola, zato je izuzetno pogodno za pse koji imaju ograničen unos masti.</p>
       <div class="price">2900 dinara</div>
       <div class="buttons">
-         <a href="#" class="buy">Kupite</a>
          <a href="korpa.html" class="cart">Korpa</a>
          <a href="proizvodi/royale.html" class="buy">O proizvodu</a>
       </div>
@@ -209,16 +313,205 @@
          <i class="fas fa-star-half-alt"></i>
          <span>( 250 )</span>
       </div>
-      <p>Ukusna pašteta sa ukusom jagnjetine. Bez boja, konzervanasa i hidrogenizovanih masti. Ukusan recept napravljen u Italiji, bez glutena, idealan je za pse svih rasa.</p>
       <div class="price">460 dinara</div>
       <div class="buttons">
-         <a href="#" class="buy">Kupite</a>
          <a href="korpa.html" class="cart">Korpa</a>
          <a href="proizvodi/mongre.html" class="buy">O proizvodu</a>
       </div>
    </div>
 
+   <div class="preview" data-target="p-7">
+      <i class="fas fa-times"></i>
+      <img src="images/Slika7.jpg" alt="">
+      <h3>Biskies</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <div class="price">320 dinara</div>
+      <div class="buttons">
+         <a href="korpa.html" class="cart">Korpa</a>
+         <a href="proizvodi/biskis.html" class="buy">O proizvodu</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-8">
+      <i class="fas fa-times"></i>
+      <img src="images/Slika8.jpg" alt="">
+      <h3>Gourmet</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <div class="price">3719 dinara</div>
+      <div class="buttons">
+         <a href="korpa.html" class="cart">Korpa</a>
+         <a href="proizvodi/gourmet.html" class="buy">O proizvodu</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-9">
+      <i class="fas fa-times"></i>
+      <img src="images/Slika9.jpg" alt="">
+      <h3>Pawise Mahalice</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <div class="price">809 dinara</div>
+      <div class="buttons">
+         <a href="korpa.html" class="cart">Korpa</a>
+         <a href="proizvodi/pawise.html" class="buy">O proizvodu</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-10">
+      <i class="fas fa-times"></i>
+      <img src="images/Slika10.jpg" alt="">
+      <h3>Plišanac</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <div class="price">1300 dinara</div>
+      <div class="buttons">
+         <a href="korpa.html" class="cart">Korpa</a>
+         <a href="proizvodi/plisanac.html" class="buy">O proizvodu</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-11">
+      <i class="fas fa-times"></i>
+      <img src="images/Slika11.jpg" alt="">
+      <h3>Transporter Nomad</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <div class="price">6700 dinara</div>
+      <div class="buttons">
+         <a href="korpa.html" class="cart">Korpa</a>
+         <a href="proizvodi/nomad.html" class="buy">O proizvodu</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-12">
+      <i class="fas fa-times"></i>
+      <img src="images/Slika12.jpg" alt="">
+      <h3>CURVER Transporter PetLife</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <div class="price">8099 dinara</div>
+      <div class="buttons">
+         <a href="korpa.html" class="cart">Korpa</a>
+         <a href="proizvodi/curver.html" class="buy">O proizvodu</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-13">
+      <i class="fas fa-times"></i>
+      <img src="images/Slika13.jpg" alt="">
+      <h3>DentaStix</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <div class="price">320 dinara</div>
+      <div class="buttons">
+         <a href="korpa.html" class="cart">Korpa</a>
+         <a href="proizvodi/denta.html" class="buy">O proizvodu</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-14">
+      <i class="fas fa-times"></i>
+      <img src="images/Slika14.jpg" alt="">
+      <h3>TRIXI</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <div class="price">250 dinara</div>
+      <div class="buttons">
+         <a href="korpa.html" class="cart">Korpa</a>
+         <a href="proizvodi/trixi.html" class="buy">O proizvodu</a>
+      </div>
+   </div>
 </div>
 
+   <footer class="footer">
+      <div class="container">
+         <div class="row">
+            <div class="footer-col">
+               <h4>Preduzeće</h4>
+               <ul>
+                  <li><a href="onama.html">O nama</a></li>
+                  <li><a href="https://www.pet-centar.rs">Partneri</a></li>
+               </ul>
+            </div>
+            <div class="footer-col">
+               <h4>get help</h4>
+               <ul>
+                  <li><a href="faq.html">FAQ</a></li>
+               </ul>
+            </div>
+            <div class="footer-col">
+               <h4>najtraženije</h4>
+               <ul>
+                  <li><a href="proizvodi/remicat.html">RemiCat</a></li>
+                  <li><a href="proizvodi/flamingo.html">FlamingoLoptice</a></li>
+                  <li><a href="proizvodi/atlas.html">TransporterAtlas</a></li>
+                  <li><a href="proizvodi/starsnacks.html">StarsnacksStrips</a></li>
+               </ul>
+            </div>
+            <div class="footer-col">
+               <h4>zapratite</h4>
+               <div class="social-links">
+                  <a href="https://www.facebook.com/pages/create/?ref_type=registration_form"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/twitter?"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                  <a href="https://rs.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <script src="script.js"></script>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

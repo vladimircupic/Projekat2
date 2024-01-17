@@ -4,92 +4,141 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/6.5.1/css/font-awesome.min.css" type="text/css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
    <link rel="stylesheet" href="css/style1.css">
    <script src="js/script.js" defer></script>
    <title>Pet Shop</title>
-   <style>
-    table, td {
-      border: 1px solid black;
-      border-radius: 10px;
-      font-size: 20px;
-    }
-    th {
-      border: 1px solid black;
-      border-radius: 10px;
-      font-size: 25px;
-      background-color: darkturquoise;
-      color:green;
-    }
-    </style>
 </head>
 <body>
    <header>
-      <h1>Code PetShop</h1>
-  </header>
-  <nav>
+      <h1 class="logo">Code PetShop</h1> 
+    <nav class="navigation">
       <a href="index.html">Početna</a>
       <a href="korpa.html">Korpa</a>
       <a href="onama.html">O nama</a>
-      <a href="Admin.html">AdminKorisnici</a>
+      <a href="admin.html">AdminKorisnici</a>
       <a href="adminkorisnic.html">AdminProizvodi</a>
-  </nav>
-  <button class="open-button" onclick="openForm()">Login</button>
-  <div class="form-popup" id="myForm">
-   <form action="/action_page.php" class="form-container">
-     <h1>Login</h1>
- 
-     <label for="email"><b>Email</b></label><br>
-     <input type="text" placeholder="Enter Email" name="email" required>
- 
-     <label for="psw"><b>Password</b></label>
-     <input type="password" placeholder="Enter Password" name="psw" required>
- 
-     <button type="submit" class="btn">Login</button>
-     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-   </form>
- </div>
- <script>
-   function openForm() {
-     document.getElementById("myForm").style.display = "block";
-   }
-   
-   function closeForm() {
-     document.getElementById("myForm").style.display = "none";
-   }
-   </script>
+      <button class="btnloginin-popup">Login</button>
+    </nav>
+   </header>
+   <br>
+   <br>
+   <br>
+   <br>
    <center>
-   <font size="3">
-<h1 style="color:red">Lista proizvoda u vasoj korpi</h1>
-</font>
-<br>
-<br>
-<table style="width:50%">
-    <tr style="height:100px">
-      <th>Naziv</th>
-      <th>Cena</th>
-      <th>Tip</th>
-      <th>Ocena</th>
-    </tr>
-    <tr style="height:100px">
-      <td>Remi cat</td>
-      <td>1700 dinara</td>
-      <td>Hrana za macke</td>
-      <td>6.71</td>
-    </tr>
-    <tr style="height:100px">
-        <td>Starstrip snacks</td>
-        <td>1200 dinara</td>
-        <td>Poslastica</td>
-        <td>4.8</td>
-      </tr>
-      <tr style="height:100px">
-        <td>Royale dog</td>
-        <td>2900 dinara</td>
-        <td>Hrana za pse</td>
-        <td>8.8</td>
-      </tr>
-  </table> 
-  </center>
-   </body>
+   <div class="wrapper">
+      <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+      <div class="form-box login">
+         <h2>Login</h2>
+         <form action="#">
+            <div class="input-box">
+               <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+               <input type="email" required>
+               <label>Email</label>
+            </div>
+            <div class="input-box">
+               <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+               <input type="password" required>
+               <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+               <label><input type="checkbox">Zapamti</label>
+               <a href="#">Zaboravili ste lozinku?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="login-register">
+               <p>Nemate nalog?   <a href="#" class="register-link">Registracija</a></p>
+            </div>
+         </form>
+      </div>
+
+
+      <div class="form-box register">
+         <h2>Registration</h2>
+         <form action="#">
+            <div class="input-box">
+               <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+               <input type="email" required>
+               <label>Username</label>
+            </div>
+            <div class="input-box">
+               <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+               <input type="email" required>
+               <label>Email</label>
+            </div>
+            <div class="input-box">
+               <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+               <input type="password" required>
+               <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+               <label><input type="checkbox">Slažem se sa uslovima korišćenja</label>
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <div class="login-register">
+               <p>Imate nalog?   <a href="#" class="login-link">Login</a></p>
+            </div>
+         </form>
+      </div>
+   </div>
+ </center><br>
+ 
+ 
+ <div class="containercart">
+    <div id="root"></div>
+    <div class="sidebar">
+      <div class="cart"><ion-icon name="cart-outline"></ion-icon><p id="count">0</p></div>
+        <div class="head"><p>Korpa</p></div>
+        <div id="cartItem">Korpa je prazna</div>
+        <div class="foot">
+            <h3>Ukupno</h3>
+            <h2 id="total"> 0.00 din.</h2>
+        </div>
+    </div>
+ </div>
+
+ <footer class="footer">
+  <div class="container">
+     <div class="row">
+        <div class="footer-col">
+           <h4>Preduzeće</h4>
+           <ul>
+              <li><a href="onama.html">O nama</a></li>
+              <li><a href="https://www.pet-centar.rs">Partneri</a></li>
+           </ul>
+        </div>
+        <div class="footer-col">
+           <h4>get help</h4>
+           <ul>
+              <li><a href="faq.html">FAQ</a></li>
+           </ul>
+        </div>
+        <div class="footer-col">
+           <h4>najtraženije</h4>
+           <ul>
+              <li><a href="proizvodi/remicat.html">RemiCat</a></li>
+              <li><a href="proizvodi/flamingo.html">FlamingoLoptice</a></li>
+              <li><a href="proizvodi/atlas.html">TransporterAtlas</a></li>
+              <li><a href="proizvodi/starsnacks.html">StarsnacksStrips</a></li>
+           </ul>
+        </div>
+        <div class="footer-col">
+           <h4>zapratite</h4>
+           <div class="social-links">
+              <a href="https://www.facebook.com/pages/create/?ref_type=registration_form"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/twitter?"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+              <a href="https://rs.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+           </div>
+        </div>
+     </div>
+  </div>
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="script.js" defer></script>
+<script src="addtocart/addtocart.js"></script>
+</body>
    </html>
